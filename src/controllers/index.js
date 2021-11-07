@@ -1,2 +1,6 @@
-const {} = require('./Product')
+const Product = require('./Product')
 
+
+module.exports = {
+    Product
+};
