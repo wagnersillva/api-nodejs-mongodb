@@ -1,6 +1,8 @@
-const Product = require('./Product')
+const Image = require('./Image');
+const Product = require('./Product');
 
 
 module.exports = {
-    Product
+    Product,
+    Image
 };
