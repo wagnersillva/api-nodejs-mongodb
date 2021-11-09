@@ -1,5 +1,6 @@
 const { PropertyHasValue } = require('../../tools/hasValue')
 const { isTypeOf } = require('../../tools/isTypeOf')
+const getDate = require('../../tools/date')
 
 const ListTypes = {
     name: 'string',
@@ -35,4 +36,4 @@ const fieldsTypes = (product) => {
     }
 }
 
-module.exports = {fieldsEmpty, fieldsTypes, httpCod}
+module.exports = { fieldsEmpty, fieldsTypes, httpCod, getDate }

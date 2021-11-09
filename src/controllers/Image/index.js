@@ -22,7 +22,8 @@ const post = (req, res) => {
     const params = {
         Bucket: process.env.AWS_BUCKET_NAME,
         Key: `${v4()}.${fileType}`,
-        Body: req.file.buffer
+        Body: req.file.buffer,
+        ACL: 'public-read'
     }
     
     s3.upload(params, (err, data) => {
