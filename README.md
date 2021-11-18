@@ -62,7 +62,7 @@
     * [🟤] Update 
     * [🟤] Delete 
 
-## Summay color
+## Summary color
     🟤 To do
     🔵 Doing
     🟡 To test
