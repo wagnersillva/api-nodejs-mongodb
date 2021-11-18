@@ -1,9 +1,11 @@
 const post = require('./methods/post');
-const findAll = require('./methods/findAll');
+const find = require('./methods/find');
+const findById = require('./methods/findById');
 
 const Product = {
     post,
-    findAll
+    find,
+    findById
 }
 
 module.exports = Product;
