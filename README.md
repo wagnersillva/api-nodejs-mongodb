@@ -49,9 +49,9 @@
 * Features products
     * [🟡] Create 
     * [🟡] Find All 
-    * [🔵] Find By id 
+    * [🟡] Find By id 
     * [🔵] Find By Category, Cod, Name 
-    * [🟤] Update 
+    * [🟡] Update 
     * [🟤] Delete 
 * Features Images Uploads
     * [🟠] Upload  
