@@ -1,6 +1,7 @@
 const Model = require('../../../models');
 const productModel = Model.Product;
-const { fieldsEmpty, fieldsTypes, httpCod, getDate } = require('../utils');
+const { fieldsEmpty, fieldsTypes, getDate } = require('../utils');
+const httpCod = require('../../../tools/codeHTTP');
 const { badRequest, successCreated, errorServer } = httpCod;
 
 const post = async (req, res) => {
@@ -16,7 +17,7 @@ const post = async (req, res) => {
             } else {
                 let product_values = { ...attributeVefiry, ...product, data_create: getDate(), last_update: null }
                 let productCreated;
-                await productModel.create(product_values).then(e => productCreated = e )
+                await productModel.create(product_values).then(productCreated)
                 res.status(successCreated).json({status: successCreated, message: "Product created successfully!", data: productCreated })
             }
         }

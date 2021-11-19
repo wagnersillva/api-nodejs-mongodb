@@ -8,6 +8,8 @@ router.get('/product/:id', Product.findById)
 
 router.post('/product/create', Product.post)  
 
+router.put('/product/update/:id', Product.update)  
+
 router.post('/image/upload', Image.upload, Image.post)  
 
 module.exports = router;

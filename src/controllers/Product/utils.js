@@ -9,13 +9,6 @@ const ListTypes = {
     quantity: 'number'
 }
 
-const httpCod = {
-    requestSuccess: 200,
-    successCreated: 201,
-    badRequest: 400,
-    errorServer: 500
-}
-
 const fieldsEmpty = (product) => {
     if(PropertyHasValue(product).isEmpty) {
         return { isEmpty: true,  message: PropertyHasValue(product).values };
@@ -36,4 +29,4 @@ const fieldsTypes = (product) => {
     }
 }
 
-module.exports = { fieldsEmpty, fieldsTypes, httpCod, getDate }
+module.exports = { fieldsEmpty, fieldsTypes, getDate }

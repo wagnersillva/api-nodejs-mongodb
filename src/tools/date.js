@@ -3,8 +3,8 @@ const getDate = (format) => {
     const month_values = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
     
     const YYYY = __date.getFullYear()
-    const MM = __date.getMonth() < 10 ? `0${__date.getMonth()}` : __date.getMonth();
-    const DD = __date.getDay()  < 10 ? `0${__date.getDay()}` : __date.getDay();
+    const MM = (__date.getMonth()+1) < 10 ? `0${(__date.getMonth()+1)}` : (__date.getMonth()+1);
+    const DD = __date.getDate()  < 10 ? `0${__date.getDate()}` : __date.getDate();
     const month = month_values[__date.getMonth()]
     const hh = __date.getHours() < 10 ? `0${__date.getHours()}` : __date.getHours();
     const mm = __date.getMinutes() < 10 ? `0${__date.getMinutes()}` : __date.getMinutes();

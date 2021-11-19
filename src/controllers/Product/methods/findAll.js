@@ -1,6 +1,6 @@
 const Model = require('../../../models');
 const productModel = Model.Product;
-const { httpCod } = require('../utils');
+const httpCod = require('../../../tools/codeHTTP');
 const { errorServer, requestSuccess } = httpCod;
 
 const find = async (req, res) => {
